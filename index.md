@@ -31,10 +31,10 @@
   * Post-Doc Univ. of California Berkeley
   
 * **Tim Poisot**
-  * [website](timotheepoisot.fr)
+  * [website](http://timotheepoisot.fr)
   * [email](mailto:t.poisot@gmail.com)
   * [twitter](http://twitter.com/tpoi)
-  * Post-Doc Univ. of Laval
+  * Post-Doc Université du Québec à Rimouski
 
 * **Rich Fitz-John**
   * [website](http://www.zoology.ubc.ca/~fitzjohn/)
