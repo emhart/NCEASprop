@@ -8,7 +8,7 @@
 
 * [Project overview](NCEAS_outline.html)
 * [Mendeley Group](http://www.mendeley.com/groups/2481881/range-shifts-and-adaptation-nceas-group/overview/)
-
+* [Google group](http://groups.google.com/forum/?fromgroups#!forum/range-shifts-and-adaptation-nceas-group)
 
 ### Group memebers
 
@@ -17,6 +17,22 @@
   * [email](mailto:edmund.m.hart@gmail.com)
   * [twitter](http://twitter.com/DistribEcology)
   * Post-Doc Univ. of British Columbia
+
+* **Jessica Hellmann**
+  * [website](http://www.nd.edu/~hellmann/Hellmann_Lab/Hellmann_Home.html)
+  * [email](mailto:hellmann.3@nd.edu)
+  * [twitter](http://twitter.com/JessicaHellmann)
+  * Associate Professor, Dept. of Biology, Notre Dame Univ.
+
+* **Lauren Buckley**
+  * [website](http://www.unc.edu/~lbuckley/lab/pmwiki.php)
+  * [email](buckley@bio.unc.edu)
+  * Assistant Professor Dept. of Biology, UNC Chapel Hill
+
+* **Amy Angert**
+  * [website](http://rydberg.biology.colostate.edu/angert/)
+  * [email](amy.angert@botany.ubc.ca)
+  * Assistant Professor, Dept. of Botany, Univ. of British Columbia
   
 * **Scott Chamberlain**  _Co-Leader_
   * [website](http://schamberlain.github.com/scott)
@@ -31,10 +47,10 @@
   * Post-Doc Univ. of California Berkeley
   
 * **Tim Poisot**
-  * [website](http://timotheepoisot.fr)
+  * [website](timotheepoisot.fr)
   * [email](mailto:t.poisot@gmail.com)
   * [twitter](http://twitter.com/tpoi)
-  * Post-Doc Université du Québec à Rimouski
+  * Post-Doc Univ. of Laval
 
 * **Rich Fitz-John**
   * [website](http://www.zoology.ubc.ca/~fitzjohn/)
@@ -42,15 +58,8 @@
   * [twitter](http://twitter.com/phylorich)
   * Post-doc Univ. Somewhere in Australia
 
-* **Jessica Hellmann**
-  * [website](http://www.nd.edu/~hellmann/Hellmann_Lab/Hellmann_Home.html)
-  * [email](mailto:hellmann.3@nd.edu)
-  * [twitter](http://twitter.com/JessicaHellmann)
-  * Associate Professor Notre Dame Univ.
-
 * **Julie Lee-Yaw**
   * [email](mailto:lee-yaw@zoology.ubc.ca)
   * PhD Student Univ. of British Columbia
 
-  
   
