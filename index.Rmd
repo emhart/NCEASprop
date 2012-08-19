@@ -46,11 +46,20 @@
   * [website](http://www.nd.edu/~hellmann/Hellmann_Lab/Hellmann_Home.html)
   * [email](mailto:hellmann.3@nd.edu)
   * [twitter](http://twitter.com/JessicaHellmann)
-  * Associate Professor Notre Dame Univ.
+  * Associate Professor, Dept. of Biology, Notre Dame Univ.
 
 * **Julie Lee-Yaw**
   * [email](mailto:lee-yaw@zoology.ubc.ca)
   * PhD Student Univ. of British Columbia
 
+* **Lauren Buckley**
+  * [website](http://www.unc.edu/~lbuckley/lab/pmwiki.php)
+  * [email](buckley@bio.unc.edu)
+  * Assistant Professor Dept. of Biology, UNC Chapel Hill
+
+* **Amy Angert**
+  * [website](http://rydberg.biology.colostate.edu/angert/)
+  * [email](amy.angert@botany.ubc.ca)
+  * Assistant Professor, Dept. of Botany, Univ. of British Columbia
   
   
