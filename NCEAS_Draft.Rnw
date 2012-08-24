@@ -1,0 +1,35 @@
+\documentclass[pdftex,11pt,a4paper]{article}
+\usepackage{natbib}
+\bibliographystyle{ecol_let}
+\setlength{\parindent}{0cm}
+
+\begin{document}
+
+\title{Understanding range shift deviance: The influence of generation time and rate of adaptation on species distribution models.}
+ \date{}
+\maketitle
+
+{\bf  Working group proposal \\}
+Short title: Range shifts and rates of adaptation \\
+{\it Submitted to NCEAS on August 31, 2012\\}
+
+{\bf Principle Investigator\\}
+Edmund M. Hart\\
+Beaty Biodiversity Center\\
+Dept. of zoology\\
+University of British Columbia\\
+4200-6270 University Blvd\\
+Vancouver, B.C. V6T 1Z4\\
+{\it ehart@zoology.ubc.ca}\\
+\\
+
+
+{\bf Project Summary:} Species range shifts is one of the most well documented responses of species to climate change and have been modeled  using correlative niche models (species distribution models, SDMs) for more than a decade.  Because these models are based on stastical correlations between a species realized niche and abiotic variables, there is often a deviance between predictions and a species' actual distribution.  Our group will seek to understand the source of this deviance using meta-analysis.  The first goal will be to test how rates of adaptation may constrain or enhance species' ability to match climate predictions. Further exploration of patterns in model deviance can be explored once data on range predictions and extant ranges has been assembled such as model artifacts and mutualistic networks. Currently much of the data from these models is locked in the form of published figures and maps though.  Therefore a second product of our working group will be the development of a web-based data extraction tool. This will allow anyone to upload a figure and extract data from it and store that data in the NCEAS Knoweledge Network for Biocomplexity and other open source data sites.  This will result in a data product with a usefulness that will outlast our working group, and enable future meta-analysis.
+
+\
+
+
+\bibliography{testlib}
+\end{document}
+
+
