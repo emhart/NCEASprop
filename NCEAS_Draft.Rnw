@@ -26,10 +26,12 @@ Vancouver, B.C. V6T 1Z4\\
 
 {\bf Project Summary:} Species range shifts is one of the most well documented responses of species to climate change and have been modeled  using correlative niche models (species distribution models, SDMs) for more than a decade.  Because these models are based on stastical correlations between a species realized niche and abiotic variables, there is often a deviance between predictions and a species' actual distribution.  Our group will seek to understand the source of this deviance using meta-analysis.  The first goal will be to test how rates of adaptation may constrain or enhance species' ability to match climate predictions. Further exploration of patterns in model deviance can be explored once data on range predictions and extant ranges has been assembled such as model artifacts and mutualistic networks. Currently much of the data from these models is locked in the form of published figures and maps though.  Therefore a second product of our working group will be the development of a web-based data extraction tool. This will allow anyone to upload a figure and extract data from it and store that data in the NCEAS Knoweledge Network for Biocomplexity and other open source data sites.  This will result in a data product with a usefulness that will outlast our working group, and enable future meta-analysis.
 
-\
+\section*{Introduction}
+Species' range shifts was one of the earliest documented ecological responses to climate change \citep{Parmesan1996,Parmesan1999,Parmesan2003}.  Since the late 1990's ecologist's have been using species' distribution models (SDM's) to try and predict how those ranges will shift over the next century \citep{Davis1998,Iverson1998,Guisan2000,Peterson2001}.  These models assume that the realized niche of a species is primarily determined by climate variables \citep{Austin2002,Dormann2007}.  Ignoring physiology,  biotic interactions and rapid local adaptation has long been a source of criticisms for these approaches \citep{Davis1998,Pearson2003,Guisan2005,Helmuth2005}
 
 
-\bibliography{testlib}
+
+\bibliography{NCEASbib}
 \end{document}
 
 
