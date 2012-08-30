@@ -3,6 +3,7 @@
 \usepackage{wrapfig}
 \usepackage[font=small,labelfont=bf]{caption}
 \usepackage[none]{hyphenat}
+\usepackage{tabularx}
 
 \bibliographystyle{ecol_let}
 \setlength{\parindent}{0cm}
@@ -37,7 +38,7 @@ Vancouver, B.C. V6T 1Z4\\
 
 
 
-{\bf Project Summary:} Species range shifts is one of the most well documented responses of species to climate change and have been modeled  using correlative niche models (species distribution models, SDMs) for more than a decade.  Because these models are based on stastical correlations between a species realized niche and abiotic variables, there is often a deviance between predictions and a species' actual distribution.  Our group will seek to understand the source of this deviance using meta-analysis.  The first goal will be to test how rates of adaptation may constrain or enhance species' ability to match climate predictions. Further exploration of patterns in model deviance can be explored once data on range predictions and extant ranges has been assembled such as model artifacts and mutualistic networks. Currently much of the data from these models is locked in the form of published figures and maps though.  Therefore a second product of our working group will be the development of a web-based data extraction tool. This will allow anyone to upload a figure and extract data from it and store that data in DataONE and other open source data sites.  This will result in a data product with a usefulness that will outlast our working group, and enable future meta-analysis.
+{\bf Project Summary:} Species range shifts is one of the most well documented responses of species to climate change and have been modeled using correlative niche models (species distribution models, SDMs) for more than a decade.  These models are stastical correlations between a species realized niche and abiotic variables, because they ignore ecological theory there is often a difference between predictions and a species' actual distribution (error). One potential source of error is that these models ignore differing rates of adaptation to novel climates.  Our group will seek to understand the source of this error using meta-analysis, and integrate adaptation into range shift theory. However much of the data from these models is locked in the form of published figures and maps. Therefore a second outcome of our working group will be a web-based data extraction tool. This will allow anyone to upload a figure and extract data from it and store it in DataONE.  Beyond producing manuscripts, we will contribute tools for meta-analysis beyond the life of our working group.
 \\
 \begin{description}\itemsep1pt
 \item[Start date] December 2012
@@ -49,7 +50,7 @@ Vancouver, B.C. V6T 1Z4\\
 \pagebreak[4]
 
 \section*{Problem Statement}
-Species' range shifts was one of the earliest documented ecological responses to climate change \citep{Parmesan1996,Parmesan1999,Parmesan2003}.  Since the late 1990's ecologist's have been using species' distribution models (SDM's) to try and predict how those ranges will shift over the next century \citep{Davis1998,Iverson1998,Guisan2000,Peterson2001}.  These models assume that the realized niche of a species is primarily determined by climate variables \citep{Austin2002,Dormann2007}.   Ignoring physiology,  biotic interactions and rapid local adaptation has long been a source of criticisms for these models \citep{Davis1998,Pearson2003,Guisan2005,Helmuth2005}.  Aside from ignoring ecological theory \citep{Elith2009}, SDM's can show great variance in their predictive abilities \citep{Elith2006,Kearney2009,Elith2010}.  More recent SDM's have begun to incorporate mechanisms such as physiology \citep{Crozier2006,Buckley2010,Buckley2011} and  life history traits \citep{Midgley2006,Kearney2009,Poyry2009,Angert2011a} to improve fit. Including traits and physiology offers a significant improvement in model predictions \citep{Angert2011a,Buckley2011} but is nonetheless only a small percentage of unexplained variance.  Other factors may be important in explaining the error in species actual ranges and their predicted distribution. \\ 
+Species' range shifts was one of the earliest documented ecological responses to climate change \citep{Parmesan1996,Parmesan1999,Parmesan2003}.  Understanding rang shifts is a pressing issue because as warming increases, species are exhibiting rapid distributional changes \citep{Chen2011}. Since the late 1990's ecologist's have been using species' distribution models (SDM's) to try and predict how those ranges will shift over the next century \citep{Davis1998,Iverson1998,Guisan2000,Peterson2001}. These models assume that the realized niche of a species is primarily determined by climate variables \citep{Austin2002,Dormann2007}.   Early models ignored physiology,  biotic interactions and rapid local adaptation, relying soley on correlations between current distribution and climate variables \citep{Davis1998,Pearson2003,Guisan2005,Helmuth2005}.  Aside from variance due to lack of ecological theory \citep{Elith2009}, SDM's can show great variance in their predictive abilities \citep{Elith2006,Kearney2009,Elith2010}.  More recent SDM's have begun to incorporate mechanisms such as physiology \citep{Crozier2006,Buckley2010,Buckley2011} and  life history traits \citep{Midgley2006,Kearney2009,Poyry2009,Angert2011a} to improve fit. Including traits and physiology offers a significant improvement in model predictions \citep{Angert2011a,Buckley2011} but still only explain small percentage of variance.  Other factors may be important in explaining the error in species actual ranges and their predicted distribution such as biotic interaction and adaptation. \\ 
 
 \begin{wrapfigure}{r}{.5\textwidth}
 <<add_demo,echo=FALSE,message=FALSE,dpi=200,fig.height=3.5,fig.width=4>>=
@@ -69,7 +70,7 @@ sig <- 3
 in.init <- rnorm(10000,mu,3)
 in.lab <- rep("Current",10000)
 for( i in 1:7){
-  mu <- mu+abs(rnorm(1,0,.8))
+  mu <- mu+abs(rnorm(1,0,.7 ))
   sig <- sig - abs(rnorm(1,0,.1))
   in.init <- c(in.init,rnorm(10000,mu,sig))
   in.lab <- c(in.lab,rep(paste(i,"Gen"),10000))
@@ -97,43 +98,138 @@ ggplot(m.df,aes(x=tv,fill=g))+geom_density(alpha=.4)+geom_vline(xintercept=9,siz
 @
 \caption{ \footnotesize{ \textit{A species with a long generation time can only complete 1 generation in a fixed time, but a short generation time can complete 7 in the same time period, rapidly advancing towards the new fitness optimum (black line)  }}\label{fig:add_demo}}
 \end{wrapfigure}
-Adaptation (and microevolution) to climate change is often cited as being an important facet in understanding how species will respond to climate change \citep{Visser2008,lavergne2010biodiversity,Hoffmann2011}, but it is difficult to accurately measure in the field \citep{Hansen2012}.
-Despite adaptation playnig an important role in species range shifts to both current \citep{Thomas2001,Bridle2007} and historical climate change \citep{Davis2001} it is conspicuously absent from SDM's.  One way of integrating adaptation into prexisting range shift predictions is by examining the deviance between SDM predictions at the current time and the current range of species and comparing it to generation time.
-Shorter generation times allow for a more rapid adaptive response to strong selective pressures \citep{Berteaux2004,Somero2010,Reed2011,Shaw2012,Walters2012}.  The first reason is that species with shorter generation times are can make use of standing additive genetic variation (Figure 1). 
-For instance fur seals are predicted to be unable to adapt to rapid climate change because of long generation times, but this is not the case for other antartic species with short generation times \citep{Forcada2008}. Species with shorter generation times also have higher rates of molecular evolution due to increased mutation rates \citep{Thomas2010}.  This contributes to the amount of additive genetic variance necessary for adaptive responses to a changing environment \citep{Lande1996}.  \textbf{Our goal is to measure SDM error and investigate how rates of adaptation introduce error model prediction}\\
-\\
-Despite more than a decade of publications on SDM's, adaptation is still absent from most models \citep{Kearney2009}. Is there a way to analyze the vast number of existing SDM's to make inferences about the sources of error? By calculating a standard metric of error it is possible to construct models of that unexplained deviance.  The challenge is that much of the data for these models is locked in the form of published figures.  Methods already exist for data extraction such as the \textit{digitize} package \citep{Poisot2011} for R (Figure 2).  Using a combination of JavaScript and Python, we can implement a web based interface for digitization of figure data available to anyone.  
+Adaptation is important to understanding how species will respond to climate change \citep{Visser2008,lavergne2010biodiversity,Hoffmann2011}, but is difficult to accurately measure in the field \citep{Hansen2012}.
+Despite adaptation playing an important role in species range shifts to both current \citep{Thomas2001,Bridle2007} and historical climate change \citep{Davis2001} it is conspicuously absent from SDMs \citep{Hoffman2011} (but see \citet{Kearney2009a}).  
+Shorter generation times allow for a more rapid adaptive response to strong selective pressures \citep{Berteaux2004,Somero2010,Hoffmann2011,Reed2011,Shaw2012,Walters2012}.  The first reason is that species with shorter generation times can make use of standing additive genetic variation (Figure 1). Models of population persistence have demonstrated that shorter generation times can allow populations to persist by novel adaptation \citep{Gomulkiewicz1995, Hoffmann2011}. For instance fur seals are predicted to be unable to adapt to rapid climate change because of long generation times, but this is not the case for other antartic species with short generation times \citep{Forcada2008}. One consequence of strong directional selection is the loss of additive genenetic variance necessary for adaptation \citep{Lande1996,Hoffmann2011}.  However, species with shorter generation times also have higher rates of molecular evolution due to increased mutation rates \citep{Thomas2010} adding to the total additive genetic variance.  The expecation is species with short generation times will track their climate on the expanding front of the range, but not necessarily go extinct at the trailing edge, instead adapting to novel climate conditions. Therefore one of the fundamental assumptions of SDMs, that species will track their current climate conditions as they shift latitudinally, can be violated by species with short generation times. \\
+
+\textbf{Our goal is to (1) quantify SDM error across a range of taxa, (2) investigate how rates of adaptation introduce error model prediction, and  (3) build tools to automatically extract data from figures in the published literature.}
+\section*{Proposed Activities}
+
+Despite more than a decade of publications on SDM's, adaptation is still absent from most models \citep{Kearney2009}. We want to analyze the large number of existing SDMs and attempt to integrate adaptation into range shift theory. By calculating a standard metric of error it is possible to construct models of that unexplained deviance from actual distributions.  The challenge is that much of the data for these models is locked in the form of published figures.  Methods already exist for data extraction such as the \textit{digitize} package \citep{Poisot2011} for R (Figure 2). 
 
 \begin{figure}[!h]
 \centering
 \includegraphics[height=2.2in,width=2.7in]{ExtractPlot.png}
 \includegraphics[height=2.2in,width=2.7in]{exportdat.png}
-\caption{\textbf{Left panel: }\textit{Range shift predictions fram \citet{Early2011} of} Batrachoseps gregarius \textit{ with calibration points marked} \textbf{Right panel: } \textit{Extracted data points using the digitize package for R \citep{Poisot2011}}}
+\caption{\textbf{Left panel: }\textit{Range shift predictions fram \citet{Early2011a} of} Batrachoseps gregarius \textit{ with calibration points marked} \textbf{Right panel: } \textit{Extracted data points using the digitize package for R \citep{Poisot2011}}}
 
 \end{figure}
- 
-\section*{Proposed Activities}
-Our goal is to understand how rates of adaptation can cause error in SDM predictions and construct web-based tools for data collection that can be stored in open access databases for other researchers to use.  Furthermore once we collect data on error rates in SDM prediction we can test other hypotheses.
+Using a combination of JavaScript and Python, we want to implement a web based interface for the extraction of data from a variety of figuret types in existing publications.
+Furthermore once we collect data on error rates in SDM prediction we can test other hypotheses such as the influence of biotic interacitons or the breakdown of mutualistic networks.
 
-\begin{itemize}
-    \item \textit{Question: Can residual error in SDM predictive models be explained by rates of adaptation?}
-      \begin{itemize}
-        \item Hypothesis: SDM's for species with shorter generation times should have greater error rates because they can rapidly adapt to new invaders and novel climate scenarios at the trailing edge of their distribution.  Therefore they are less likely to track their current shifting climate
+\begin{enumerate}
+    \item \textit{Quantify the amount of error in published SDMs by comparing model predictions to original data sources.}
+        
+        \begin{itemize}
+        \item By returning to the original data sources, we can measure the error rate of predicted distributions and actual distributions.  We will store this in a publicly accessibl database on DataONE.
         \end{itemize}
-    \item \textit{Software product: A web-based interface for data extraction of digitized figures.}
+   \item \textit{Investigate the sources of error in SDMs, testing hypotheses about how rates of adaptation contribute to error. }
+        \begin{itemize}
+        \item We hypothesize that SDMs for species with shorter generation times should have greater error rates because they can rapidly adapt to new invaders and novel climate scenarios at the trailing edge of their distribution (Figure 3).  Therefore they are less likely to track their current shifting climate.  We will test this hypothesis by constructing mixed-effects models of SDM error.
+        \end{itemize}
+     
+    
+    \item \textit{Develop a web-based interface for data extraction from digitized figures.}
       \begin{itemize}
-        \item An open source tool that will allow anyone to extract data from digital figures including: scatter plots, bar charts and georeferencable maps.  The interface will store the data at DataONE which can then be used for any future meta-analysis.
+        \item We will develop an open source tool that allows anyone to extract data from digital figures including: scatter plots, bar charts and georeferencable maps.  The interface will store the data at DataONE which can then be used for any future meta-analysis.
         \end{itemize} 
-\end{itemize}
+\end{enumerate}
 
+\begin{wrapfigure}{r}{.5\textwidth}
+<<hypoth,echo=FALSE,message=FALSE,dpi=200,fig.height=4,fig.width=4>>=
+library(ggplot2)
+x = seq(1,400,length=50)
+y = 5*exp(-.009*x)+rlnorm(50,0,.7)
+dat <- data.frame(cbind(x,y))
+ggplot(dat,aes(x=x,y=y))+geom_point()+xlab("Generation time (in days)")+ylab("Mean absolute error")
+@
+\caption{ \footnotesize{ \textit{Hypothesis  }}\label{fig:hypoth}}
+\end{wrapfigure}
 \textit{Error analysis} \\
-Error can be calculated in three ways: difference in area of occupancy, difference in expanding front, and difference in trailing edge.  The first two are the most common and we will have the largest sample from these.  All these can be theoretically be compared by converting them to Z-scores and calculating a standard error statistic such as root-mean squared error.  Once we have quantified error, we can construct mixed effects models with error as the response variable.  The predictor of interest will be generation time.  Other variables will also be included, for instance it's known that different SDM contstruction methods have differences in performance \citep{Elith2006, Elith2010}.  Using this framework we can add other covariates into our models to control for modeling artifacts. 
+Error can be calculated in three ways: difference in area of occupancy, difference in expanding front, and difference in trailing edge.  The first two are the most common and we will have the largest sample from these.  Because the trailing edge is of the most interest, it can be inferred from total area of occupancy.  Species with less shift in the trailing edge will have a larger total area of occupancy.  All these can be theoretically be compared by converting them to Z-scores and calculating a standard error statistic such as root-mean squared error.  Once we have quantified error, we can construct mixed-effects models with error as the response variable. Using this framework we can add other covariates into our models to control for modeling artifacts, for instance it's known that different SDM contstruction methods have differences in performance \citep{Elith2006, Elith2010}.  Furthermore we will have assembled a database of residual model error.  Our primary goal will be to analyze error in terms of generation time, but this does not exclude considering biotic interactions.  Our group has two experts in networks: mutualistic networks (Chamberlain) and food webs (Poisot, Hart).  Therefore we will also consider mutualistic pairs of species and examine if range shifts are limited by lack co-expanding mutualists \citep(Hellmann2008, Pelini2010) or enhanced by freedom from competitive interactions.\\
+
+\textit{Data extraction from figures} \\
+Data from SDMs is often presented in the form of distribution maps or scatter plots (Figure 2).  While tools exist for 
 
 
 
+
+Table 1: \textit{Participant list.  I have organized a group of ecologists, evolutionary bioligists and programmers representing a diversity career stages, institutions and NCEAS experience (* represents new NCEAS visitors.).  In particular all of the programmers are biologists that have experience building computational tools for ecological questions.}\textbf{All listed particpants are confirmed.}
+\begin{center}
+    \begin{tabularx}{\linewidth}{ | l | l | X |}
+    \hline
+    \textbf{Participant} & \textbf{Affiliation} & \textbf{Expertise / Notes} \\ \hline
+    
+    Jessica Hellmann & University of Notre Dame & Climate change, range shifts, adaptation \\ \hline
+   
+    Lauren Buckley & University of North Carolina Chapel Hill & Climate change, range shifts, SDM development. \\ \hline
+    
+    Amy Angert & University of British Columbia & Climate change, range shifts, SDM development \\ \hline
+     
+  Jessica Blois &  University California Merced & Climate change, range shifts SDM development  \\ \hline   
+     
+  Scott Chamberlain* & Simon Fraser University & Evolution, software development, \textit{NCEAS technical liaison} \\ \hline
+  
+    Karthik Ram & Univeristy of California Berkeley & Climaet change, GIS, software development \\ \hline
+ 
+    Tim Poisot & Université du Québec à Rimouski & Network theory, evolution, software development \\ \hline
+
+  Rich FitzJohn* & The University of New South Wales & Evolution, software development \\ \hline
+    
+    Jens Stevens* & The University of California Davis & Climate change, range shifts, \textit{Graduate student} \\ \hline 
+    
+    Mark Hahnel* & Digital Science UK, Figshare & Software development, data management \\ \hline
+  
+   Edmund Hart* & University of British Columbia & Climate change, software development,        \textit{In charge of data policy requirements} \\ \hline
+   
+   
+   \end{tabularx}
+\end{center}
+
+
+
+Table 2: \textit{Proposed timeline.  We plan to have three meetings over the course of our working group, each time simultaneously developing our software product and writing manuscripts.}
+\begin{center}
+    \begin{tabularx}{\linewidth}{ | l | X |}
+    \hline
+    \textbf{Meeting} & \textbf{Objectives} \\ \hline
+    
+    Prior to meeting &
+    \begin{itemize}
+      \item Develop web backend for data extraction from figures, have beta version working.
+      \item Create complete list of all relevant SDM papers to extract data from.
+      \item Download data for all species in SDM papers and assemble base range sizes and boundaries.
+    \end{itemize} \\ \hline
+     
+     I. December 2012 & 
+     \begin{itemize}
+      \item Beta test figure extraction software, develop web front end and work with NCEAS to set-up databases to store extracte data.  Begin working on web front-end
+      \item Begin extracting data from figures and assembling figure database
+      \item Develop models of SDM error.
+      \item Create outline for potential manuscripts.
+     \end{itemize}
+  \\ \hline
+       II. Summer 2013 & 
+     \begin{itemize}
+      \item Complete web front end, and beta user interface for figure extraction.  Work with NCEAS to finalize data storage
+      \item Finalize initial manuscripts for submission.
+      \item Develop ideas for other uses of the error data extracted from SDMs.
+     \end{itemize}
+  \\ \hline
+       III. Winter 2013 & 
+     \begin{itemize}
+      \item Publicly release website after any final tweaks.
+      \item Revise submitted manuscripts.
+      \item Outline and/or make revisions on further manuscripts using our existing data.
+     \end{itemize}
+  \\ \hline
+  \end{tabularx}
+\end{center}
 
 
 \bibliography{NCEASbib}
 \end{document}
+
+
 
 
