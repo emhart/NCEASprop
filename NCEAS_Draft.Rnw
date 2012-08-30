@@ -114,14 +114,14 @@ Despite more than a decade of publications on SDM's, adaptation is still absent 
 \caption{\textbf{Left panel: }\textit{Range shift predictions fram \citet{Early2011a} of} Batrachoseps gregarius \textit{ with calibration points marked} \textbf{Right panel: } \textit{Extracted data points using the digitize package for R \citep{Poisot2011}}}
 
 \end{figure}
-Using a combination of JavaScript and Python, we want to implement a web based interface for the extraction of data from a variety of figuret types in existing publications.
-Furthermore once we collect data on error rates in SDM prediction we can test other hypotheses such as the influence of biotic interacitons or the breakdown of mutualistic networks.
+Using a combination of JavaScript and Python, we want to implement a web based interface for the extraction of data from a variety of figure types in existing publications.
+Furthermore, once we collect data on error rates in SDM prediction we can test other hypotheses such as the influence of biotic interacitons or the breakdown of mutualistic networks.
 
 \begin{enumerate}
     \item \textit{Quantify the amount of error in published SDMs by comparing model predictions to original data sources.}
         
         \begin{itemize}
-        \item By returning to the original data sources, we can measure the error rate of predicted distributions and actual distributions.  We will store this in a publicly accessibl database on DataONE.
+        \item By returning to the original data sources, we can measure the error rate of predicted distributions and actual distributions.  We will store this in a publicly accessible database on DataONE.
         \end{itemize}
    \item \textit{Investigate the sources of error in SDMs, testing hypotheses about how rates of adaptation contribute to error. }
         \begin{itemize}
@@ -146,13 +146,15 @@ ggplot(dat,aes(x=x,y=y))+geom_point()+xlab("Generation time (in days)")+ylab("Me
 \caption{ \footnotesize{ \textit{Hypothesis  }}\label{fig:hypoth}}
 \end{wrapfigure}
 \textit{Error analysis} \\
-Error can be calculated in three ways: difference in area of occupancy, difference in expanding front, and difference in trailing edge.  The first two are the most common and we will have the largest sample from these.  Because the trailing edge is of the most interest, it can be inferred from total area of occupancy.  Species with less shift in the trailing edge will have a larger total area of occupancy.  All these can be theoretically be compared by converting them to Z-scores and calculating a standard error statistic such as root-mean squared error.  Once we have quantified error, we can construct mixed-effects models with error as the response variable. Using this framework we can add other covariates into our models to control for modeling artifacts, for instance it's known that different SDM contstruction methods have differences in performance \citep{Elith2006, Elith2010}.  Furthermore we will have assembled a database of residual model error.  Our primary goal will be to analyze error in terms of generation time, but this does not exclude considering biotic interactions.  Our group has two experts in networks: mutualistic networks (Chamberlain) and food webs (Poisot, Hart).  Therefore we will also consider mutualistic pairs of species and examine if range shifts are limited by lack co-expanding mutualists \citep(Hellmann2008, Pelini2010) or enhanced by freedom from competitive interactions.\\
+Error can be calculated in three ways: difference in area of occupancy, difference in expanding front, and difference in trailing edge.  The first two are the most common and we will have the largest sample from these.  Because the trailing edge is of the most interest, it can be inferred from total area of occupancy.  Species with less shift in the trailing edge will have a larger total area of occupancy.  All these can be theoretically be compared by converting them to Z-scores and calculating a standard error statistic such as root-mean squared error.  Once we have quantified error, we can construct mixed-effects models with error as the response variable. Using this framework we can add other covariates into our models to control for modeling artifacts, for instance it's known that different SDM contstruction methods have differences in performance \citep{Elith2006, Elith2010}.  Furthermore we will have assembled a database of residual model error.  Our primary goal will be to analyze error in terms of generation time, but this does not exclude considering biotic interactions.  Our group has three experts in networks: mutualistic networks (Chamberlain) and food webs (Poisot, Hart).  Therefore we will also consider mutualistic pairs of species and examine if range shifts are limited by lack of co-expanding mutualists \citep(Hellmann2008, Pelini2010) or enhanced by release from competitive interactions.\\
 
 \textit{Data extraction from figures} \\
-Data from SDMs is often presented in the form of distribution maps or scatter plots (Figure 2).  While tools exist for 
-
-
-
+Data from SDMs is often presented in the form of distribution maps or scatter plots (Figure 2).  Rather than using existing tools to extract SDM data from figures, we have a more ambitious goal of creating a new tool that we can use within the working group to extract data, and will be a resource for all scientists post-working group.  While tools exist for data extraction from figures, they are all run natively on personal computers. Examples include GraphClick and ImageJ.  We believe a data extraction tool that lives in the web wil be much more powerful and benefit science.  Living in the web, our tool will be cross-platform (Windows, Linux, OSX, etc.), which is extremely important to get wide adoption. In addition, our tool will allow for automatic data retrieval to a database on the backend, presentation of figures called via APIs from various publishers or user uploaded figures, automatic updating of the user interface (UI), authentication of users in order to track user statistics, and other features as needed.  We will build this data extraction tool using a combination of the JavaScript and Python programming languages.  Data will be captured in one of two general ways.
+\begin{wrapfigure}{r}{.5\textwidth}
+\includegraphics[height=2.2in,width=2.7in]{figextract.png}
+\caption{ \footnotesize{ \textit{Figure Extraction  }}\label{fig:figextract}}
+\end{wrapfigure}
+First, for some figures we will be able to automate data extraction (for an example, see Figure 2).  Second, users will either upload their own figure or will be presented with a figure, at which point they define the axes via clicks on the page, then click on the points of interest on the figure to collect the data.  Instead of the data going to a spreadsheet on a hard drive of a personal computer, the data will all go to a central database stored on servers in the cloud.  Data in the database will be exposed via a RESTful API, which will allow anyone to search and retrieve data.  After or during the NCEAS working group, depending on when the tool is stable, we will beta test the tool with the public to work out bugs.  This tool will eventually allow for crowdsourcing of data extraction from figures at large scales, similar to Galaxy Zoo, Citizen Sky, and FoldIt.  The massive scale at which this tool will operate will transform quantitative meta-analysis studies.  Currently, researchers extract data once from a figure, and someone else may proof their data.  However, with our tool, we can potentially get 10 different users to click on each and every point in a single figure, providing for greater accuracy and a measure of precision.  To make this happen we need a tool that lives in the web and can take advantage of the massive scale at which science can be done. \\
 
 Table 1: \textit{Participant list.  I have organized a group of ecologists, evolutionary bioligists and programmers representing a diversity career stages, institutions and NCEAS experience (* represents new NCEAS visitors.).  In particular all of the programmers are biologists that have experience building computational tools for ecological questions.}\textbf{All listed particpants are confirmed.}
 \begin{center}
@@ -170,7 +172,7 @@ Table 1: \textit{Participant list.  I have organized a group of ecologists, evol
      
   Scott Chamberlain* & Simon Fraser University & Evolution, software development, \textit{NCEAS technical liaison} \\ \hline
   
-    Karthik Ram & Univeristy of California Berkeley & Climaet change, GIS, software development \\ \hline
+    Karthik Ram & Univeristy of California Berkeley & Climate change, GIS, software development \\ \hline
  
     Tim Poisot & Université du Québec à Rimouski & Network theory, evolution, software development \\ \hline
 

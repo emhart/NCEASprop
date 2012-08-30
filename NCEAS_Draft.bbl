@@ -1,0 +1,265 @@
+\begin{thebibliography}{40}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Angert \emph{et~al.}(2011)Angert, Crozier, Rissler, Gilman, Tewksbury
+  \& Chunco}]{Angert2011a}
+Angert, A.L., Crozier, L.G., Rissler, L.J., Gilman, S.E., Tewksbury, J.J. \&
+  Chunco, A.J. (2011).
+\newblock {Do species' traits predict recent shifts at expanding range edges?}
+\newblock \emph{Ecology letters}, 14, 677--89.
+
+\bibitem[{Austin(2002)}]{Austin2002}
+Austin, M. (2002).
+\newblock {Spatial prediction of species distribution: an interface between
+  ecological theory and statistical modelling}.
+\newblock \emph{Ecological Modelling}, 157, 101--118.
+
+\bibitem[{Berteaux \emph{et~al.}(2004)Berteaux, R\'{e}ale, McAdam \&
+  Boutin}]{Berteaux2004}
+Berteaux, D., R\'{e}ale, D., McAdam, A.G. \& Boutin, S. (2004).
+\newblock {Keeping pace with fast climate change: can arctic life count on
+  evolution?}
+\newblock \emph{Integrative and comparative biology}, 44, 140--151.
+
+\bibitem[{Bridle \& Vines(2007)}]{Bridle2007}
+Bridle, J.R. \& Vines, T.H. (2007).
+\newblock {Limits to evolution at range margins: when and why does adaptation
+  fail?}
+\newblock \emph{Trends in ecology \& evolution}, 22, 140--7.
+
+\bibitem[{Buckley \emph{et~al.}(2011)Buckley, Butlin \& Bridle}]{Buckley2011}
+Buckley, J., Butlin, R.K. \& Bridle, J.R. (2011).
+\newblock {Evidence for evolutionary change associated with the recent range
+  expansion of the British butterfly, Aricia agestis, in response to climate
+  change}.
+\newblock \emph{Molecular Ecology}, 21, no--no.
+
+\bibitem[{Buckley \emph{et~al.}(2010)Buckley, Urban, Angilletta, Crozier,
+  Rissler \& Sears}]{Buckley2010}
+Buckley, L.B., Urban, M.C., Angilletta, M.J., Crozier, L.G., Rissler, L.J. \&
+  Sears, M.W. (2010).
+\newblock {Can mechanism inform species' distribution models?}
+\newblock \emph{Ecology letters}, 13, 1041--54.
+
+\bibitem[{Crozier \& Dwyer(2006)}]{Crozier2006}
+Crozier, L. \& Dwyer, G. (2006).
+\newblock {Combining Population-Dynamic and Ecophysiological Models to Predict
+  Climate-Induced Insect Range Shifts.}
+\newblock \emph{The American naturalist}, 168.
+
+\bibitem[{Davis \emph{et~al.}(1998)Davis, Jenkinson \& Lawton}]{Davis1998}
+Davis, A.J., Jenkinson, L.S. \& Lawton, J.H. (1998).
+\newblock {Making mistakes when predicting shifts in species range in response
+  to global warming}.
+\newblock \emph{Nature}, 391, 783--786.
+
+\bibitem[{Davis \& Shaw(2001)}]{Davis2001}
+Davis, M.B. \& Shaw, R.G. (2001).
+\newblock {Range shifts and adaptive responses to Quaternary climate change.}
+\newblock \emph{Science (New York, N.Y.)}, 292, 673--9.
+
+\bibitem[{Dormann(2007)}]{Dormann2007}
+Dormann, C.F. (2007).
+\newblock {Promising the future? Global change projections of species
+  distributions}.
+\newblock \emph{Basic and Applied Ecology}, 8, 387--397.
+
+\bibitem[{Early \& Sax(2011)}]{Early2011a}
+Early, R. \& Sax, D.F. (2011).
+\newblock {Analysis of climate paths reveals potential limitations on species
+  range shifts}.
+\newblock \emph{Ecology Letters}, pp. no--no.
+
+\bibitem[{Elith \emph{et~al.}(2006)Elith, Anderson, Ferrier, Guisan, Graham,
+  Dudik, Hijmans, Huettmann, Leathwick, Lehmann, Li, Lohmann, Loiselle, Manion,
+  Moritz, Nakamura, Nakazawa, Overton, Peterson, Phillips, Richardson,
+  Scachetti-pereira, Schapire, Williams, Wisz \& Zimmermann}]{Elith2006}
+Elith, J., Anderson, R.P., Ferrier, S., Guisan, A., Graham, C.H., Dudik, M.,
+  Hijmans, R.J., Huettmann, F., Leathwick, J.R., Lehmann, A., Li, J., Lohmann,
+  L.G., Loiselle, B.A., Manion, G., Moritz, C., Nakamura, M., Nakazawa, Y.,
+  Overton, J.M., Peterson, A.T., Phillips, S.J., Richardson, K.,
+  Scachetti-pereira, R., Schapire, R.E., Williams, S., Wisz, M.S. \&
+  Zimmermann, N.E. (2006).
+\newblock {Novel methods improve prediction of species ' distributions from
+  occurrence data}.
+\newblock \emph{Ecography}, 2, 129--151.
+
+\bibitem[{Elith \emph{et~al.}(2010)Elith, Kearney \& Phillips}]{Elith2010}
+Elith, J., Kearney, M. \& Phillips, S. (2010).
+\newblock {The art of modelling range-shifting species}.
+\newblock \emph{Methods in Ecology and Evolution}, 1, 330--342.
+
+\bibitem[{Elith \& Leathwick(2009)}]{Elith2009}
+Elith, J. \& Leathwick, J.R. (2009).
+\newblock {Species Distribution Models: Ecological Explanation and Prediction
+  Across Space and Time}.
+\newblock \emph{Annual Review of Ecology, Evolution, and Systematics}, 40,
+  677--697.
+
+\bibitem[{Forcada \emph{et~al.}(2008)Forcada, Trathan \& Murphy}]{Forcada2008}
+Forcada, J., Trathan, P.N. \& Murphy, E.J. (2008).
+\newblock {Life history buffering in Antarctic mammals and birds against
+  changing patterns of climate and environmental variation}.
+\newblock \emph{Global Change Biology}, pp. 2473--2488.
+
+\bibitem[{Guisan \& Thuiller(2005)}]{Guisan2005}
+Guisan, A. \& Thuiller, W. (2005).
+\newblock {Predicting species distribution: offering more than simple habitat
+  models}.
+\newblock \emph{Ecology Letters}, 8, 993--1009.
+
+\bibitem[{Guisan \& Zimmermann(2000)}]{Guisan2000}
+Guisan, A. \& Zimmermann, N.E. (2000).
+\newblock {Predictive habitat distribution models in ecology}.
+\newblock \emph{Ecological Modelling}, 135, 147--186.
+
+\bibitem[{Hansen \emph{et~al.}(2012)Hansen, Olivieri, Waller \&
+  Nielsen}]{Hansen2012}
+Hansen, M.M., Olivieri, I., Waller, D.M. \& Nielsen, E.E. (2012).
+\newblock {Monitoring adaptive genetic responses to environmental change.}
+\newblock \emph{Molecular Ecology}, 21, 1311--1329.
+
+\bibitem[{Helmuth \emph{et~al.}(2005)Helmuth, Kingsolver \&
+  Carrington}]{Helmuth2005}
+Helmuth, B., Kingsolver, J.G. \& Carrington, E. (2005).
+\newblock {Biophysics, physiological ecology, and climate change: does
+  mechanism matter?}
+\newblock \emph{Annual review of physiology}, 67, 177--201.
+
+\bibitem[{Hoffmann \& Sgr\`{o}(2011)}]{Hoffmann2011}
+Hoffmann, A. \& Sgr\`{o}, C. (2011).
+\newblock {Climate change and evolutionary adaptation}.
+\newblock \emph{Nature}.
+
+\bibitem[{Iverson \& Prasad(1998)}]{Iverson1998}
+Iverson, L. \& Prasad, A. (1998).
+\newblock {Predicting abundance of 80 tree species following climate change in
+  the eastern United States}.
+\newblock \emph{Ecological Monographs}.
+
+\bibitem[{Kearney \& Porter(2009)}]{Kearney2009}
+Kearney, M. \& Porter, W. (2009).
+\newblock {Mechanistic niche modelling: combining physiological and spatial
+  data to predict species' ranges.}
+\newblock \emph{Ecology letters}, 12, 334--50.
+
+\bibitem[{Kearney \emph{et~al.}(2009)Kearney, Porter, Williams, Ritchie \&
+  Hoffmann}]{Kearney2009a}
+Kearney, M., Porter, W.P., Williams, C., Ritchie, S. \& Hoffmann, A.A. (2009).
+\newblock {Integrating biophysical models and evolutionary theory to predict
+  climatic impacts on species' ranges: the dengue mosquito Aedes aegypti in
+  Australia}.
+\newblock \emph{Functional Ecology}, 23, 528--538 ST -- Integrating biophysical
+  models and e.
+
+\bibitem[{Lande \& Shannon(1996)}]{Lande1996}
+Lande, R. \& Shannon, S. (1996).
+\newblock {The role of genetic variation in adaptation and population
+  persistence in a changing environment}.
+\newblock \emph{Evolution}.
+
+\bibitem[{Lavergne \emph{et~al.}(2010)Lavergne, Moquet, Ronce \&
+  Thuiller}]{lavergne2010biodiversity}
+Lavergne, S., Moquet, N., Ronce, O. \& Thuiller, W. (2010).
+\newblock {Biodiversity and climate change: Integrating evolutionary and
+  ecological responses of species and communities}.
+\newblock \emph{Annual Review of Ecology, Evolution, and Systematics}, 41.
+
+\bibitem[{Midgley \emph{et~al.}(2006)Midgley, Hughes, Thuiller \&
+  Rebelo}]{Midgley2006}
+Midgley, G.F., Hughes, G.O., Thuiller, W. \& Rebelo, a.G. (2006).
+\newblock {Migration rate limitations on climate change-induced range shifts in
+  Cape Proteaceae}.
+\newblock \emph{Diversity and Distributions}, 12, 555--562.
+
+\bibitem[{Parmesan(1996)}]{Parmesan1996}
+Parmesan, C. (1996).
+\newblock {Climate and species' range}.
+\newblock \emph{Nature}, 382, 765--766.
+
+\bibitem[{Parmesan \emph{et~al.}(1999)Parmesan, Ryrholm, Stefanescu, Hill,
+  Thomas, Descimon, Huntley, Kaila, Kullberg, Tammaru \& Others}]{Parmesan1999}
+Parmesan, C., Ryrholm, N., Stefanescu, C., Hill, J.K., Thomas, C.D., Descimon,
+  H., Huntley, B., Kaila, L., Kullberg, J., Tammaru, T. \& Others (1999).
+\newblock {Poleward shifts in geographical ranges of butterfly species
+  associated with regional warming}.
+\newblock \emph{Nature}, 399, 579--583.
+
+\bibitem[{Parmesan \& Yohe(2003)}]{Parmesan2003}
+Parmesan, C. \& Yohe, G. (2003).
+\newblock {A globally coherent fingerprint of climate change impacts across
+  natural systems}.
+\newblock \emph{Nature}, 421, 37--42.
+
+\bibitem[{Pearson \& Dawson(2003)}]{Pearson2003}
+Pearson, R.G. \& Dawson, T.P. (2003).
+\newblock {Predicting the impacts of climate change on the distribution of
+  species: are bioclimate envelope models useful?}
+\newblock \emph{Global Ecology and Biogeography}, 12, 361--371 ST -- Predicting
+  the impacts of climate ch.
+
+\bibitem[{Peterson(2001)}]{Peterson2001}
+Peterson, A.T. (2001).
+\newblock {Predicting species' geographic distributions based on ecological
+  niche modeling}.
+\newblock \emph{The Condor}, 103, 599--605.
+
+\bibitem[{Poisot(2011)}]{Poisot2011}
+Poisot, T. (2011).
+\newblock {The digitize Package : Extracting Numerical Data from Scatterplots}.
+\newblock \emph{The R Journal}, 3, 25--26.
+
+\bibitem[{P\"{o}yry \emph{et~al.}(2009)P\"{o}yry, Luoto, Heikkinen, Kuussaari
+  \& Saarinen}]{Poyry2009}
+P\"{o}yry, J., Luoto, M., Heikkinen, R.K., Kuussaari, M. \& Saarinen, K.
+  (2009).
+\newblock {Species traits explain recent range shifts of Finnish butterflies}.
+\newblock \emph{Global Change Biology}, 15, 732--743.
+
+\bibitem[{Reed \emph{et~al.}(2011)Reed, Schindler \& Waples}]{Reed2011}
+Reed, T., Schindler, D. \& Waples, R. (2011).
+\newblock {Interacting effects of phenotypic plasticity and evolution on
+  population persistence in a changing climate}.
+\newblock \emph{Conservation Biology}.
+
+\bibitem[{Shaw \& Etterson(2012)}]{Shaw2012}
+Shaw, R.G. \& Etterson, J.R. (2012).
+\newblock {Rapid climate change and the rate of adaptation: insight from
+  experimental quantitative genetics.}
+\newblock \emph{The New phytologist}.
+
+\bibitem[{Somero(2010)}]{Somero2010}
+Somero, G.N. (2010).
+\newblock {The physiology of climate change: how potentials for acclimatization
+  and genetic adaptation will determine 'winners' and 'losers'.}
+\newblock \emph{The Journal of experimental biology}, 213, 912--20.
+
+\bibitem[{Thomas \emph{et~al.}(2001)Thomas, Bodsworth, Wilson, Simmons, Davies,
+  Musche \& Conradt}]{Thomas2001}
+Thomas, C.D., Bodsworth, E.J., Wilson, R.J., Simmons, a.D., Davies, Z.G.,
+  Musche, M. \& Conradt, L. (2001).
+\newblock {Ecological and evolutionary processes at expanding range margins.}
+\newblock \emph{Nature}, 411, 577--81.
+
+\bibitem[{Thomas \emph{et~al.}(2010)Thomas, Welch, Lanfear \&
+  Bromham}]{Thomas2010}
+Thomas, J.a., Welch, J.J., Lanfear, R. \& Bromham, L. (2010).
+\newblock {A generation time effect on the rate of molecular evolution in
+  invertebrates.}
+\newblock \emph{Molecular biology and evolution}, 27, 1173--80.
+
+\bibitem[{Visser(2008)}]{Visser2008}
+Visser, M.E. (2008).
+\newblock {Keeping up with a warming world; assessing the rate of adaptation to
+  climate change.}
+\newblock \emph{Proceedings. Biological sciences / The Royal Society}, 275,
+  649--59.
+
+\bibitem[{Walters \emph{et~al.}(2012)Walters, Blanckenhorn \&
+  Berger}]{Walters2012}
+Walters, R.J., Blanckenhorn, W.U. \& Berger, D. (2012).
+\newblock {Forecasting extinction risk of ectotherms under climate warming: an
+  evolutionary perspective}.
+\newblock \emph{Functional Ecology}.
+
+\end{thebibliography}
